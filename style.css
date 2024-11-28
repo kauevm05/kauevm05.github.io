@@ -1,0 +1,54 @@
+
+body {
+    margin: 0; /* remover margem padrao */
+    overflow: hidden;/* evitar barras de rolagem */
+    background-color: #87CEEB; /* fundo azul claro  */
+    font-family: Arial, sans-serif;/* estilo fonte */
+}
+
+/* container do jogo */
+.game-container {
+    position: relative;/* posição relativa */
+    width: 100%;/* largura */
+    height: 80vh;/* altura */
+    overflow: hidden;/* elemento que passar do container some */
+}
+
+/* chao */
+.platform {
+    position: absolute;
+    bottom: 0; /* parte inferior */
+    width: 100%; /* toda largura */
+    height: 50px; /* altura do chao */
+    background-color: #228B22; 
+    border-top: 5px solid #006400; /* borda do chao */
+}
+
+/* estilo da bolinha */
+.flash {
+    position: absolute;
+    bottom: 50px; /* emcima da plataforma */
+    left: 50px;/* posicao a esquerda */
+    width: 50px;/* largura */
+    height: 50px;/* altura */
+    background: red;
+    border-radius: 50%; /* circulo */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* sombra */
+}
+
+/*obstáculos */
+.obstacle {
+    position: absolute;
+    bottom: 50px; /* altura do chao*/
+    width: 40px;/* largura */
+    height: 40px;/* altura */
+    background: black;
+    border-radius: 5px; /* bordas arredondada */
+  }
+
+/* pontuação */
+#score {
+    font-size: 1 rem;/* tamanho letra */
+    text-align: center;/* centralizar */
+    margin-top: 10px;/* mergem superior */
+}
